@@ -10,6 +10,6 @@ module.exports = {
     sourceType: 'script',
     project: './tsconfig.json',
   },
-  plugins: ['@typescript-eslint', 'jest'],
+  plugins: ['@typescript-eslint', 'react-hooks', 'jest'],
   rules: {},
 };
