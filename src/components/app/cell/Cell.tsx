@@ -8,7 +8,7 @@ export interface CellProps {
 export const Cell = (props: CellProps): JSX.Element => {
   const { id, onClick } = props;
   return (
-    <div onClick={() => typeof onClick !== undefined && onClick(id)} className="cell">
+    <div onClick={() => onClick && onClick(id)} className="cell">
       {id}
     </div>
   );
