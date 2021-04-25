@@ -1,6 +1,11 @@
 import * as React from 'react';
 
-export default (props: { id: number; onClick?: (id: number) => void }): JSX.Element => {
+export interface CellProps {
+  id: number,
+  onClick?: (id: number) => void
+}
+
+export const Cell = (props: CellProps): JSX.Element => {
   const { id, onClick } = props;
   return (
     <div onClick={() => typeof onClick !== undefined && onClick(id)} className="cell">
