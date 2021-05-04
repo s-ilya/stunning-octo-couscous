@@ -6,7 +6,7 @@ export interface CellProps {
   onClick?: (id: number) => void
 }
 
-export const Cell: FC<CellProps> = ({id, onClick}): JSX.Element => {
+export const Cell = ({id, onClick}: CellProps): JSX.Element => {
   return (
     <div onClick={() => onClick && onClick(id)} className="cell">
       {id}
