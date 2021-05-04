@@ -23,10 +23,13 @@ module.exports = ({ mode } = {}) => ({
   ],
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
+    alias: {
+      components: path.resolve(__dirname, "src/components"),
+    }
   },
   output: {
     filename: "bundle.js",
   },
   mode,
-  target: "web"
+  target: "web",
 });
