@@ -7,6 +7,9 @@ const Template: Story<CellProps> = (args) => <Cell {...args} />;
 export default {
   title: 'Components/Cell',
   component: Cell,
+  argTypes: {
+    onClick: { action: 'clicked' },
+  },
 };
 
 export const Default = Template.bind({});
