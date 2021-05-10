@@ -1,0 +1,8 @@
+{
+  "setupFilesAfterEnv": ["./jest.setup.ts"],
+  "moduleNameMapper": {
+    "^components\\/(.*)$": [
+      "<rootDir>/src/components/$1"
+    ]
+  }
+}
